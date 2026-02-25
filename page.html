@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h1 id="texto-saludo">Pagina de dibujos de Jes&uacute;s</h1><br>
+        <img id="ImageLogo" src="img/logo.jpg" alt="Me">
+<nav>
+    <div class="categories-editor">
+ <select name="Categorias" id="categories" onchange="mostrar()">
+    <option value="0" id="todas">Todas Las Categorias</option>
+<option value="1" id="digital" class="opciones" >Digital</option>
+<option value="2" id= "realismo" class="opciones" >Realismo</option>
+<option value="3" id= "tatoo" class="opciones" >Tatto</option>
+
+</div>
+
+ </select><div class="navegacion">
+ <a href="about.html" id="about">Sobre mi</a> 
+  <button id="contact" onclick="redes()">Contactame</button>
+  <a href="https://wa.me/59326692" target="_blank">
+ <img id="ImageLogo" id="WP" class="social" src="img/Whatsapp logo.jpg" alt="Me">
+</a>
+  <a href="https://facebook.com/share/1DXF1zAqc7/" target="_blank"><img id="ImageLogo" id="FB" class="social" src="https://i.pinimg.com/736x/e7/c1/54/e7c15488d7a9ef341d79bbe19c5bac30.jpg" alt="Me">
+    </a><img id="ImageLogo" id="X" class="social"src="https://i.pinimg.com/1200x/6e/8b/82/6e8b82d2f900219ce55256f6f97d9cde.jpg" alt="Me">
+  <a href="https://www.instagram.com/yisus_de_nasrael/" target="_blank"><img id="ImageLogo" id="X" class="social"src="https://i.pinimg.com/736x/d6/be/cc/d6beccbf190a3eac0f35474e06afdcbf.jpg" alt="Me">
+</div></a>  
+
+
+</nav>
+    <div id="Dibujos" class="image" onclick="zoom()">
+<img id="digital" class="imagen-item"src="img/2 sin título (1).jpg" alt="" >
+<img id="digital"class="imagen-item" src="img/4 sin título.jpg" alt="">
+<img id="digital" class="imagen-item" src="img/7 sin título.jpg" alt="">
+<img id="digital" class="imagen-item" src="img/13 sin título.jpg" alt="">
+<img id="tatoo"id="digital" class="imagen-item" src="img/42 sin título.jpg" alt="">
+<img id="digital" class="imagen-item" src="img/45 sin título.jpg" alt="">
+</div>
+<script src="page.js"></script>
+</body>
+</html>
