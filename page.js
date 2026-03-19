@@ -46,3 +46,12 @@ function zoom() {
         });
     });
 }
+
+const panelButton = document.getElementById('toggleComentarios');
+const panel = document.getElementById('comentariosContainer');
+if (panelButton && panel) {
+    panelButton.addEventListener('click', function() {
+        panel.classList.toggle('collapsed');
+        panelButton.textContent = panel.classList.contains('collapsed') ? 'Enviar comentarios' : 'Ocultar comentarios';
+    });
+}

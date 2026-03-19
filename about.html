@@ -27,6 +27,22 @@
                 </div>
             </div>
         </section>
+
+        <section class="comentarios-desplegable">
+            <button id="toggleComentarios" class="btn-toggle">Enviar comentarios</button>
+            <div id="comentariosContainer" class="comentarios-seccion collapsed">
+                <h3>Déjame tu comentario</h3>
+                <p>Escribe aquí lo que quieras decirme y envíalo a mi correo Gmail.</p>
+                <form class="comentarios-form" action="mailto:TUCORREO@gmail.com" method="post" enctype="text/plain">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" name="Nombre" placeholder="Tu nombre" required>
+                    <label for="mensaje">Comentario</label>
+                    <textarea id="mensaje" name="Comentario" rows="4" placeholder="Qué opinas sobre mi arte..." required></textarea>
+                    <button type="submit">Enviar comentario</button>
+                </form>
+                <p class="nota"><strong>Nota:</strong> Si el navegador no permite enviar desde el formulario, copia y pega este correo: <code>TUCORREO@gmail.com</code></p>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -60,5 +76,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        const toggleComentarios = document.getElementById('toggleComentarios');
+        const comentariosContainer = document.getElementById('comentariosContainer');
+        toggleComentarios.addEventListener('click', function() {
+            comentariosContainer.classList.toggle('collapsed');
+            if (comentariosContainer.classList.contains('collapsed')) {
+                toggleComentarios.textContent = 'Enviar comentarios';
+            } else {
+                toggleComentarios.textContent = 'Ocultar comentarios';
+            }
+        });
+    </script>
 </body>
 </html>

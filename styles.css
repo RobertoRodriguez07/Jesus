@@ -259,6 +259,79 @@ main {
     gap: 10px;
 }
 
+.comentarios-desplegable {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+.btn-toggle {
+    background: #2c3e50;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0.65rem 1rem;
+    margin-bottom: 0.7rem;
+}
+.btn-toggle:hover {
+    background: #1f2c3a;
+}
+.comentarios-seccion {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    color: #222;
+}
+.comentarios-seccion.collapsed {
+    display: none;
+}
+.comentarios-seccion h3 {
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+.comentarios-form {
+    display: grid;
+    gap: 10px;
+    margin-top: 8px;
+}
+.comentarios-form input,
+.comentarios-form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+}
+.comentarios-form button {
+    width: fit-content;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #2c3e50;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.comentarios-form button:hover {
+    background: #1a2a3d;
+}
+.nota {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .comentarios-seccion {
+        margin: 16px auto;
+        padding: 14px;
+    }
+}
+
+
 .footer-input {
     flex: 1;
     padding: 10px 15px;

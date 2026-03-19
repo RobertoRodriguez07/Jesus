@@ -40,6 +40,43 @@
 <img id="tatoo"id="digital" class="imagen-item" src="img/42 sin título.jpg" alt="">
 <img id="digital" class="imagen-item" src="img/45 sin título.jpg" alt="">
 </div>
+
+
+    <section class="comentarios-desplegable">
+        <button id="toggleComentarios" class="btn-toggle">Enviar comentarios</button>
+        <div id="comentariosContainer" class="comentarios-seccion collapsed">
+            <h3>Déjame tu comentario</h3>
+            <p>Escribe tu mensaje y envíalo a Gmail a <strong>TUCORREO@gmail.com</strong>.</p>
+            <form class="comentarios-form" action="mailto:TUCORREO@gmail.com" method="post" enctype="text/plain">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" type="text" name="Nombre" placeholder="Tu nombre" required>
+                <label for="mensaje">Comentario</label>
+                <textarea id="mensaje" name="Comentario" rows="4" placeholder="Tu comentario..." required></textarea>
+                <button type="submit">Enviar comentario</button>
+            </form>
+        </div>
+    </section>
+
+<footer class="footer-page">
+    <div class="footer-page-contenedor">
+        <div class="footer-page-col">
+            <h4>Arte de Jesús</h4>
+            <p>Gracias por visitar mi galería. ¡Sigue creando y compartiendo arte!</p>
+        </div>
+        <div class="footer-page-col">
+            <h4>Contacto</h4>
+            <a href="mailto:TUCORREO@gmail.com">TUCORREO@gmail.com</a>
+            <a href="about.html">Sobre mí</a>
+        </div>
+        <div class="footer-page-col">
+            <h4>Redes</h4>
+            <a href="https://www.instagram.com/yisus_de_nasrael/" target="_blank">Instagram</a>
+            <a href="https://facebook.com/share/1DXF1zAqc7/" target="_blank">Facebook</a>
+        </div>
+    </div>
+    <p class="footer-page-copy">© 2024 ArteContemporáneo. Todos los derechos reservados.</p>
+</footer>
+
 <script src="page.js"></script>
 </body>
 </html>
