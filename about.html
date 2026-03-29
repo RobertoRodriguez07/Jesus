@@ -17,7 +17,7 @@
                     <h2 class="artista-nombre">Jes&uacute;s Delgado</h2>
                     <p class="artista-descripcion">
                         <span class="artista-rol">Artista plástico</span> <br>originario de Ciego de Avila, Cuba.
-                        Estudiante de la escuela de artes {nombre} de Camaguey, su arte expresa blablablablabla</p>
+                        Estudiante de la escuela de artes <a href="blablabla">Vicentina de La Torre</a> de Camaguey, su arte expresa blablablablabla</p>
                     <div class="artista-stats">
                         <div class="stat">
                             <span class="stat-numero">1</span>
@@ -52,7 +52,7 @@
                     <h3 class="footer-titulo">ArteContemporáneo</h3>
                     <p class="footer-descripcion">&dArr; Ac&aacute; debajo te dejo mis redes</p>
                     <div class="footer-social">
-                        <a  target="_blank" ="https://www.instagram.com/yisus_de_nasrael/" id="IG" aria-label="Instagram">IG</a>
+                        <a  target="_blank" href="https://www.instagram.com/yisus_de_nasrael/" id="IG" aria-label="Instagram">IG</a>
                         <a target="_blank" href="#" id="TW" aria-label="Twitter">X</a>
                         <a target="_blank" href="https://facebook.com/share/1DXF1zAqc7/" id="FB" aria-label="Facebook">FB</a>
                      
@@ -74,19 +74,7 @@
                     <a href="#">Cookies</a>
                 </div>
             </div>
-        </div>
     </footer>
-    <script>
-        const toggleComentarios = document.getElementById('toggleComentarios');
-        const comentariosContainer = document.getElementById('comentariosContainer');
-        toggleComentarios.addEventListener('click', function() {
-            comentariosContainer.classList.toggle('collapsed');
-            if (comentariosContainer.classList.contains('collapsed')) {
-                toggleComentarios.textContent = 'Enviar comentarios';
-            } else {
-                toggleComentarios.textContent = 'Ocultar comentarios';
-            }
-        });
-    </script>
+    <script src="page.js"></script>
 </body>
 </html>
